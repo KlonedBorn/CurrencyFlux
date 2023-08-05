@@ -51,12 +51,12 @@ To get this project up and running on your local machine, follow these steps:
 
 1. Clone the Git repository:
     ```sh
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/KlonedBorn/CurrencyFlux.git
     ```
    
 2. Navigate to the project directory:
     ```sh
-    cd your-repo-name
+    cd CurrencyFlux
     ```
 
 3. Install Maven dependencies:
