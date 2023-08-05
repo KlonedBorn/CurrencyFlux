@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="tablet" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kloneborn.PrimaryController">
+   <children>
+      <VBox prefWidth="100.0" styleClass="section" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="Currency Exchange">
+               <styleClass>
+                  <String fx:value="section__title" />
+                  <String fx:value="text" />
+               </styleClass>
+            </Label>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the amount and select the currency to convert it">
+               <styleClass>
+                  <String fx:value="section__info" />
+                  <String fx:value="field__input--text" />
+                  <String fx:value="text" />
+               </styleClass>
+            </Text>
+            <HBox prefWidth="200.0" styleClass="status-bar">
+               <children>
+                  <Label styleClass="status-bar__label" text="Status:" />
+                  <Label fx:id="lb_conn" styleClass="status-bar__message" text="&lt;connection.response&gt;" />
+                  <Circle fx:id="cr_status" fill="DODGERBLUE" radius="5.0" stroke="BLACK" strokeType="INSIDE" styleClass="status-bar__icon" />
+               </children>
+            </HBox>
+            <VBox prefWidth="100.0" styleClass="form__field">
+               <children>
+                  <Label styleClass="field__heading" text="Amount" />
+                  <HBox>
+                     <children>
+                        <TextField fx:id="tf_currAmt" onAction="#onActionParseAmount" styleClass="field__input--text" />
+                     </children>
+                  </HBox>
+                  <Text fx:id="tx_amtErr" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="error-log" text="&lt;amount.error&gt;" />
+               </children>
+            </VBox>
+            <VBox styleClass="section__form">
+               <children>
+                  <VBox prefWidth="100.0" styleClass="form__field">
+                     <children>
+                        <Label text="From">
+                           <styleClass>
+                              <String fx:value="field__heading" />
+                              <String fx:value="text" />
+                           </styleClass>
+                        </Label>
+                        <ChoiceBox fx:id="cb_currFrom" prefWidth="150.0" styleClass="field__input--choicebox" />
+                     </children>
+                  </VBox>
+                  <VBox prefWidth="100.0" styleClass="form__field">
+                     <children>
+                        <Label styleClass="field__heading" text="To" />
+                        <ChoiceBox fx:id="cb_currTo" prefWidth="150.0" styleClass="field__input--choicebox" />
+                     </children>
+                  </VBox>
+                  <VBox prefWidth="100.0" styleClass="form__field">
+                     <children>
+                        <Label styleClass="field__heading" text="Amount" />
+                        <Label fx:id="lb_currAmt" styleClass="field__output--text" text="&lt;action.amount&gt;" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Button id="convert" mnemonicParsing="false" onAction="#onActionConvertInputAmount" text="Convert" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

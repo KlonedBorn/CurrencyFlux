@@ -1,0 +1,99 @@
+.root {
+    -fx-font-family: "Roboto Lt";
+}
+
+.text {
+    -fx-text-fill: black;
+}
+
+.tablet {
+    -fx-pref-width: 900px;
+    -fx-pref-height: 600px;
+    -fx-alignment: center;
+    -fx-padding: 50px;
+}
+
+.section {
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+}
+
+.section__title {
+    -fx-font-size: 24px;
+}
+
+.section__info {
+    -fx-font-size: 14px;
+}
+
+.section__form {
+    -fx-spacing: 10px;
+}
+
+.form__field {
+    -fx-spacing: 5px;
+}
+
+.field__heading {
+    -fx-font-size: 16px;
+}
+
+.field__input--choicebox {
+    -fx-pref-width: 200px;
+}
+
+.field__input--text {
+    -fx-pref-width: 200px;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+}
+
+.field__output--text {
+    -fx-font-size: 16px;
+}
+
+/* Button */
+#convert {
+    -fx-padding: 8px 20px;
+    -fx-font-size: 14px;
+    -fx-background-color: #007ACC;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+#convert:armed {
+    -fx-background-color: #005FA3;
+}
+
+#convert:hover {
+    -fx-background-color: #005FA3;
+}
+
+.error-log {
+    -fx-font-size: 12px;
+    -fx-fill: red;
+}
+
+.status-bar {
+    -fx-alignment: baseline-center;
+    -fx-padding: 10px;
+}
+
+.status-bar__label {
+    -fx-font-size: 14px;
+    -fx-padding: 0 5px;
+}
+
+.status-bar__message {
+    -fx-font-size: 14px;
+    -fx-padding: 0 5px;
+}
+
+.status-bar__icon {
+    -fx-padding: 0 5px;
+}
