@@ -44,7 +44,6 @@ Now, imagine this: a spark ignited within me when the need arose to convert XCD 
 While I acknowledge that this application might harbor a few bugs, I take immense pride in having created a functional tool that's accessible to almost anyone.So, why not give this straightforward app a shot? Try it out and experience firsthand the result of my dedication and innovation! Your feedback matters greatly, as it fuels my motivation to continuously refine my craft.
 
 
-
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 To get this project up and running on your local machine, follow these steps:
@@ -59,7 +58,18 @@ To get this project up and running on your local machine, follow these steps:
     cd CurrencyFlux
     ```
 
-3. Install Maven dependencies:
+3. Obtain an API key from [currencyapi.com](https://currencyapi.com/):
+
+    - Create an account on [currencyapi.com](https://currencyapi.com/).
+    - Obtain an API key from your personal dashboard.
+
+4. Set the API key in the project:
+
+    - Navigate to the `resources/config` directory in the project.
+    - Open the `apikey.json` file.
+    - Replace `"YOUR_API_KEY"` with the API key you obtained from [currencyapi.com](https://currencyapi.com/).
+
+5. Install Maven dependencies:
 
     Make sure you have [Maven](https://maven.apache.org/) installed on your system.
     
@@ -67,7 +77,7 @@ To get this project up and running on your local machine, follow these steps:
     mvn install
     ```
 
-4. Run the application:
+6. Run the application:
 
     ```sh
     mvn javafx:run
